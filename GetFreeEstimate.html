@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width" />
+    <title>KozyCorners</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta content="Author" name="WebThemez">
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="body">
+<header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left" style="padding-right:60px;">
+                <!--<h1><span><i class="fa fa-align-center"></i></span>  <a href="#body" class="scrollto"> HOUSING</a></h1>-->
+                 <a href="index.html"><img src="img/logo.jpg" alt="KozyCorners" title="KozyCorners" style="height:61px;" /></a>
+            </div>
+
+            <nav id="nav-menu-container" style="float:left;">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="HowItWorks.html">How It Works</a></li>
+                    <li><a href="#">KozyCorners Homes</a></li>
+                    <li><a href="#">Login / Register</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+            <nav id="nav-menu-container" style="float:right;">
+                <ul class="nav-menu">
+                    <li><a href="GetFreeEstimate.html" style="background:#B284BE;color:#ffffff;">Get Free Estimate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="contact" class="wow fadeInUp" style="padding: 0; margin: 0; background: url(img/formbackground.jpg) no-repeat 0px 0px; background-size: cover; font-family: 'Raleway', sans-serif;">
+    <div class="container" style="padding-top:30px;padding-bottom:50px;">
+
+        <div class="row contact-info">
+            <div class="col-lg-8" style="background-color:transparent;">
+                <div class="section-header" style="    padding: 7em 4em;">
+                    <h1 style="color:#fff; font-family:gilroy;font-size:65px;line-height:72px;font-weight:700; text-shadow: 0 2px 4px rgba(65,-48,62,.3);">Let’s design your dream home safely.</h1>
+                    <p style="font-size:15px;font-weight:600;text-align:center;color:#fff;">
+                        Begin your KozyCorners journey from the comfort of your home
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4" style="background: #fff;">
+                <div class="container">
+                    <div class="form">
+                        <div class="section-header" style="margin-bottom:0px;padding-top:25px;">
+                            <h2 style="color:#000000;font-size:20px;">
+                                Talk to our designer
+                            </h2>
+                        </div>
+
+                        <!-- Form itself -->
+                        <form action="ThankYou.html" name="postform" id="postform" onsubmit="return validateForm()" method="post">
+                            <div class="control-group" style="margin-bottom:15px;">
+                                <input type="text" name="name" id="name" placeholder = "name" class="form-control">
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;" id="nameErr"></div>
+                            </div>
+                            <div class="form-group" style="margin-bottom:15px;">
+                                <input type="text" name="email" id="email" placeholder = "Email" class="form-control">
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;"  id="emailErr"></div>
+                            </div>
+                            <div class="form-group" style="margin-bottom:15px;">
+                                <input type="text" name="phone" id="phone" placeholder = "Phone" class="form-control">
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;"  id="phoneErr"></div>
+                            </div>
+                            <div class="form-group" style="margin-bottom:15px;">
+                                <select id="city" name="city" class = "form-control">
+                                    <option value="SelectCity" selected="true">Select  City</option>
+                                    <option value="1">Mumbai</option>
+                                    <option value="2">New Delhi</option>
+                                    <option value="3">Hyderabad</option>
+                                    <option value="4">Bengaluru</option>
+                                    <option value="5">Kolkata</option>
+                                    <option value="6">Ahemdabad</option>
+                                    <option value="7">Surat</option>
+                                    <option value="8">Pune</option>
+                                    <option value="9">Jaipur</option>
+                                    <option value="10">Lucknow</option>
+                                    <option value="11">Nagpur</option>
+
+                                </select>
+                                <div class="text-danger"  style="text-align: left;font-size: 13px;font-weight: 500;"  id="cityErr"></div>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom:15px;">
+                                <select id="propertytype",name="propertytype" class = "form-control">
+                                    <option value="SelectPropertyType">Select Property Type</option>
+                                    <option value="1">Residential</option>
+                                    <option value="2">Commercial</option>
+                                </select>
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;" id="propertytypeErr"></div>
+                            </div>
+                            <div class="form-group" style="margin-bottom:15px;">
+                                <select id="worktype",name="worktype" class = "form-control">
+                                    <option value="SelectWorkType">Select Work Type</option>
+                                    <option value="1">Designing and Execution</option>
+                                    <option value="2">Only Designingoption</option>
+                                    <option value="3">Only Execution</option>
+                                </select>
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;" id="worktypeErr"></div>
+                            </div>
+                            <div class="form-group" style="text-align:left;margin-bottom:15px;">
+                                <input type="checkbox" name="agree" id="agree" value="yes" />
+                                <label for="agree">I agree to the <a style="text-decoration:none;color:#eb595f;" href="#">Terms and Conditions</a>
+                                </label>
+                                <div class="text-danger" style="text-align: left;font-size: 13px;font-weight: 500;visibility: hidden;"  id="agree_chk_error">
+                                    Can't proceed as you didn't agree to the terms!
+                                </div>
+                               
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Get Started" class="btn btn-danger btn-block" style="text-transform:uppercase;border-radius:30px;background-color:#eb595f;padding:10px 12px;" />
+                            </div>
+                            <!-- For success/fail messages -->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section><!-- #contact -->
+<script type="text/javascript">
+
+    function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+    //function to validate form
+
+    function validateForm(){
+
+        var name=document.postform.name.value;
+        var email=document.postform.email.value;
+        var phone=document.postform.phone.value;
+        var city=document.postform.city.value;
+        var worktype=document.postform.worktype.value;
+        var propertytype=document.postform.propertytype.value;
+      //  var terms=document.postform.terms.value;
+
+        // Defining error variables with a default value
+        var nameErr = emailErr = phoneErr = cityErr = worktypeErr=propertytypeErr = true;
+
+        if(name=="")
+        {
+            printError("nameErr", "Please enter your name");
+        }
+        else{
+
+            var regex = /^[a-zA-Z\s]+$/;
+            if(regex.test(name)==false){
+
+                printError("nameErr", "Please enter an aplhabets olny");
+            }
+            else{
+                printError("nameErr", "");
+                nameErr=false;
+            }
+        }
+
+        if(email=="")
+        {
+            printError("emailErr","Please enter your email");
+
+        }
+        else{
+            var regex = /^\S+@\S+\.\S+$/;
+            if(regex.test(email)==false){
+                printError("emailErr","Please enter a valid email");
+            }
+            else{
+                printError("emailErr","");
+                emailErr=false;
+            }
+        }
+
+        // Validate mobile number
+    if(phone == "") {
+        printError("phoneErr", "Please enter your phone number");
+    } else {
+        var regex = /^[1-9]\d{9}$/;
+        if(regex.test(phone) === false) {
+            printError("phoneErr", "Please enter a valid 10 digit phone number");
+        } else{
+            printError("phoneErr", "");
+            phoneErr = false;
+        }
+    }
+    if(city == "SelectCity") {
+        printError("cityErr", "Please select your city");
+    } else {
+        printError("cityErr", "");
+        cityErr = false;
+    }
+
+    if(propertytype == "SelectPropertyType") {
+        printError("propertytypeErr", "Please select your property type");
+    } else {
+        printError("propertytypeErr", "");
+        propertytypeErr = false;
+    }
+
+    if(worktype == "SelectWorkType") {
+        printError("worktypeErr", "Please select your work type");
+    } else {
+        printError("worktypeErr", "");
+        worktypeErr = false;
+    }
+
+    if(!postform.agree.checked)
+    {
+        document.getElementById('agree_chk_error').style.visibility='visible';
+        return false;
+    }
+    else
+    {
+        document.getElementById('agree_chk_error').style.visibility='hidden';
+        return true;
+    }
+
+}
+
+</script>
+<main id="main">
+
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works?</h2>
+                <p>
+                    Looking to design your home interiors? Here's how you can get started.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <div class="box wow fadeInLeft">
+                        <div>
+                            <img src="img/formfill.png" style="height:232px;" class="img-fluid" alt="" />
+
+                        </div>
+                        <h4 class="title"><a href="">Step 1</a></h4>
+                        <p class="description">
+                            Fill out the form to get started
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                        <img src="img/phonediscussion.jpg" style="height:232px;" class="img-fluid" alt="" />
+                    </div>
+                    <div class="box wow fadeInRight">
+                        <h4 class="title"><a href="">Step 2</a></h4>
+                        <p class="description">
+                            Upto 3 Interior Designing firms will contact you to discuss your requirements over phone / Email
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                        <img src="img/client-meeting.jpg" style="height:232px;" class="img-fluid" alt="" />
+                    </div>
+                    <div class="box wow fadeInRight">
+                        <h4 class="title"><a href="">Step 3</a></h4>
+                        <p class="description">
+                            Select the Interior Designing firm which best suits your needs to work on your Home / Office
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #How it works -->
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    KozyCorners Advantages
+                </h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="box wow fadeInLeft">
+                        <div class="icon"><i class="fa fa-arrows"></i></div>
+                        <h4 class="title">Comfort of your home</h4>
+                        <p class="description">
+                            Wihout leaving the comfort of your home, get connected to Carefully selected and Highly Experienced Interior Designing Firms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box wow fadeInRight">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <h4 class="title"><a href="">KozyCorners Experience</a></h4>
+                        <p class="description">
+                            Enjoy our Highly Streamlined and Hassle Free KozyCorner Experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="icon"><i class="fa fa-money"></i></div>
+                        <h4 class="title"><a href="">Pricing</a></h4>
+                        <p class="description">
+                            No Cost to Connect and discuss your requirements with Interior Designers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box wow fadeInLeft">
+                        <div class="icon"><i class="fa fa-ravelry"></i></div>
+                        <h4 class="title"><a href="">Finalize Designing Firms</a></h4>
+                        <p class="description">
+                            Get Multiple Designs and Quotations from Various Firms before Finalizing one.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #Advantages -->
+    <!--==========================
+      Clients Section
+    ============================-->
+
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+    <section id="portfolio" style=" padding: 25px 50px; " class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    Looking For Design Inspiration?
+                </h2>
+                <p>
+                    Browse thousands of looks that we've curated specially for you.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <!--==========================
+                  Kitchen
+                ============================-->
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/estellekitchen.jpg" class="portfolio-popup">
+                            <img src="img/estellekitchen.jpg" alt="Estelle L-shaped kitchen">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Estelle L-shaped kitchen</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/aspenkitchen.jpg" class="portfolio-popup">
+                            <img src="img/aspenkitchen.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Aspen L-shaped kitchen</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/cholekitchen.jpg" class="portfolio-popup">
+                            <img src="img/cholekitchen.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Chloe Kitchen WIth Island Counter</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==========================
+                  Living Rooms
+                ============================-->
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/aquadelighlivingroom.jpg" class="portfolio-popup">
+                            <img src="img/aquadelighlivingroom.jpg" alt="Estelle L-shaped kitchen">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Aqua Delight Living Room</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/sereneLivingRoom.jpg" class="portfolio-popup">
+                            <img src="img/sereneLivingRoom.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Serene Summer Living Room</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/aristiclivingroom.jpg" class="portfolio-popup">
+                            <img src="img/aristiclivingroom.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Artistic Intrigue Living Room</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--==========================
+                  Bedrooms
+                ============================-->
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/clusterbedroom.jpg" class="portfolio-popup">
+                            <img src="img/clusterbedroom.jpg" alt="Estelle L-shaped kitchen">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Contemporary Cluster Guest Bedroom</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/fusionbedroom.jpg" class="portfolio-popup">
+                            <img src="img/fusionbedroom.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Contemporary Fusion Guest Room</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/chicbedroom.jpg" class="portfolio-popup">
+                            <img src="img/chicbedroom.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Serene Chic Guest Bedroom</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--==========================
+                  Kids Room
+                ============================-->
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/vibrantkidsroom.jpg" class="portfolio-popup">
+                            <img src="img/vibrantkidsroom.jpg" alt="Estelle L-shaped kitchen">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Vibrant Kids Bedroom Interior Design</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/alluringkidsroom.jpg" class="portfolio-popup">
+                            <img src="img/alluringkidsroom.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Alluring Kids Bedroom Interior Design</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/cosykidsroom.jpg" class="portfolio-popup">
+                            <img src="img/cholekitchen.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Cozy Kids Bedroom Interior Design</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--==========================
+                  Modular Wardrobes
+                ============================-->
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/brickwardrobe.jpg" class="portfolio-popup">
+                            <img src="img/brickwardrobe.jpg" alt="Estelle L-shaped kitchen">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Brick Beauty Wardrobe</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/raymondwardrobe.jpg" class="portfolio-popup">
+                            <img src="img/raymondwardrobe.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Raymond High Wardrobe</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/octobberskieswardrobe.jpg" class="portfolio-popup">
+                            <img src="img/octobberskieswardrobe.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">October Skies Wardrobe</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #portfolio -->
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="owl-carousel testimonials-carousel">
+
+                <div class="testimonial-item">
+                    <p>
+                        When we first got in touch with Kozycorners team, we knew we had found what we needed: a group of young, enthusiastic, sensitive designers.
+                        But what impressed us the most was their patience to listen to our requirements and connect us with suitable designers.
+                        We were able to talk to different designers who presented their designs as per our requirements and shortlist a designer who best suited us.
+                    </p>
+                    <h3> - Sunil Soni, Mumbai</h3>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Kozycorners team could bring my dream office design to life. They could not only understand designs
+                        I had in my mind for my office but also add their Innovative ideas to give me a perfect office.
+                    </p>
+                    <h3> - Vrushabh Shah, Delhi</h3>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Kozycorners helped me turn my house into a home. At the end, it was better than I could have ever imagined. We love it.
+                    </p>
+                    <h3> - Sneha vithlani, Indore</h3>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        I never thought getting my house renovated would be such a breeze. We would like to Thank the entire team at Kozycorners
+                        for Fantastic work they have done. They were originally recommended to us by a friend and now we recommend them to others.
+                    </p>
+                    <h3> - Isha Gosar, pune</h3>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Best part of Kozycorners is that you have the option to choose 1 amongst list of several designing firms provided by them without any cost.
+                        I just wanted a modular kitchen without renovating entire house for which Kozycorners connected me with 3 designers who presented their
+                        ideas out of which I selected the one which best suited my budget & requirements.
+                    </p>
+                    <h3> - Mayank Kapadia Mumbai</h3>
+                </div>
+
+                <div class="testimonial-item" >
+                    <p>
+                        Working with Kozycorners designers, is working with responsibility & commitment. They will work with your needs and help you going
+                        through the transition of renovating your home. Great company to work with, dedicated & passionate designers are associated with them.
+                    </p>
+                    <h3> - Ishaan Sharma, Mumbai</h3>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #testimonials -->
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    ABOUT KOZYCORNERS
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 about-img">
+                    <img src="img/Business-Office-Wall-Art.jpg" alt="">
+                </div>
+
+                <div class="col-lg-7 content">
+                    <h2>Want To Get Your Interiors Done ?</h2>
+                    <p>
+                        KozyCorners helps customer looking to get the interiors of their Home or Office done by Connecting them to Highly
+                        Experienced and Carefully Vetted list of Interior Designing Firms. The Customers can connect to these Interior Designing
+                        Firms and explain their requirements from the comfort of their home and finally select the one which best matches their needs.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- #about -->
+
+</main>
+
+<!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row" style="padding-top:20px;">
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <h4>KozyCorners</h4>
+                        <div class="details">
+                            <div class="social">
+                                <a href="" style="padding:10px;"><i class="fa fa-twitter"></i></a>
+                                <a href="" style="padding:10px;"><i class="fa fa-facebook"></i></a>
+                                <a href="" style="padding:10px;"><i class="fa fa-google-plus"></i></a>
+                                <a href="" style="padding:10px;"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <ul class="nav" style="display:block;">
+                        <li style="padding-bottom:20px;"><a href="#contact" style="color:#ffffff;">Term & Condition</a></li>
+                        <li style="padding-bottom:20px;"><a href="#contact" style="color:#ffffff;">About Us</a></li>
+                        <li><a href="#contact" style="color:#ffffff;">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="row contact-info">
+                        <div class="col-lg-12">
+                            <h3 style="font-size:20px;">Get In Touch</h3>
+                            <div>
+                                <span style="padding:5px;"><i class="ion-ios-location-outline"></i></span><span>Address</span>
+                                <p>
+                                    KozyCorners, #49436 block, #888 Honey rd
+                                    Mumbai
+                                </p>
+                            </div>
+                            <div class="contact-phone">
+                                <span style="padding:5px;"><i class="ion-ios-telephone-outline"></i></span><span>Call us</span>
+                                <p>
+                                    <a href="tel:+7-800-999-800">+(91)-976845620</a>
+                                </p>
+                            </div>
+                            <div class="contact-email">
+                                <span style="padding:5px;"><i class="ion-ios-email-outline"></i></span><span>Email us</span>
+                                <p>
+                                    <a href="mailto:info@example.com">Kozycorners@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+    </footer><!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript  -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+    <script src="contact/jqBootstrapValidation.js"></script>
+    <script src="contact/contact_me.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
